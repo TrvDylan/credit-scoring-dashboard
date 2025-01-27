@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.graph_objects as go
 from io import StringIO
-# shap.initjs()
+shap.initjs()
 import os
 import streamlit as st
 
