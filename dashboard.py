@@ -9,6 +9,10 @@ import seaborn as sns
 import plotly.graph_objects as go
 from io import StringIO
 shap.initjs()
+import os
+import streamlit as st
+
+port = int(os.getenv("PORT", 8501))
 
 ################ FONCTIONS DE CACHE ################
 # Scaler
