@@ -14,6 +14,9 @@ import streamlit as st
 
 port = int(os.getenv("PORT", 8501))
 
+if __name__ == "__main__":
+    st.run_server(port=port)
+
 ################ FONCTIONS DE CACHE ################
 # Scaler
 @st.cache_data
