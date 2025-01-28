@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import requests
 import joblib
+import IPython
 import shap
 import matplotlib.pyplot as plt
 import seaborn as sns

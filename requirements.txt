@@ -1,4 +1,5 @@
 streamlit==1.37.1
+ipython
 imblearn
 pandas
 numpy
