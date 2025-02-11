@@ -161,6 +161,7 @@ if uploaded_file:
 
 
                 if afficher_distributions:
+                    st.subheader(f"📈 Analyse des distributions")
                     variable = st.selectbox("Choisissez une variable pour voir la distribution :", X.columns)
                     
                     fig, ax = plt.subplots(figsize=(6, 4))
@@ -178,6 +179,7 @@ if uploaded_file:
                     st.pyplot(fig)
 
                 if afficher_analyse:
+                    st.subheader(f"📈 Analyse bi-variée")
                     feature_x = st.selectbox("🛠️ Sélectionnez la 1ère feature :", X.columns, key="feature_x")
                     feature_y = st.selectbox("🛠️ Sélectionnez la 2ème feature :", X.columns, key="feature_y")
                     fig, ax = plt.subplots(figsize=(8, 5))
